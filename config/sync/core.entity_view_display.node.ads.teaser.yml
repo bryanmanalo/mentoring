@@ -1,0 +1,32 @@
+uuid: 0ae11568-ccf7-4727-9458-92d635dca2aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ads.body
+    - node.type.ads
+  module:
+    - text
+    - user
+id: node.ads.teaser
+targetEntityType: node
+bundle: ads
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_location: true
+  field_media_image: true

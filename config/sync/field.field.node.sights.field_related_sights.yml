@@ -1,0 +1,27 @@
+uuid: 096f3d9d-a125-4885-9c60-2fdfe45ee4f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_sights
+    - node.type.sights
+id: node.sights.field_related_sights
+field_name: field_related_sights
+entity_type: node
+bundle: sights
+label: 'Related Sights'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      sights: sights
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

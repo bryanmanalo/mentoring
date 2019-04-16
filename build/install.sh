@@ -9,3 +9,6 @@ source $path/common.sh
 echo "...Installing Drupal standard profile... waiting 30s for the database to come up."
 sleep 30s # The db container won't be quite ready otherwise.
 $drush site-install standard --account-name=${DRUPAL_USER} --account-pass=${DRUPAL_PASSWORD} --db-url='mysql://'${MYSQL_USER}':'${MYSQL_PASSWORD}'@'${MYSQL_HOSTNAME}'/'${MYSQL_DATABASE}'' --site-name=${PROJECT} -y
+
+echo "... Delete default shortcut set entity."
+./vendor/drupal/console/bin/drupal entity:delete shortcut_set default

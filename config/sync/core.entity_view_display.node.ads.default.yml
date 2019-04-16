@@ -1,0 +1,46 @@
+uuid: cd4875a6-0718-407d-865d-3e6d9cee0902
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ads.body
+    - field.field.node.ads.field_location
+    - field.field.node.ads.field_media_image
+    - node.type.ads
+  module:
+    - text
+    - user
+id: node.ads.default
+targetEntityType: node
+bundle: ads
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_location:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_media_image:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

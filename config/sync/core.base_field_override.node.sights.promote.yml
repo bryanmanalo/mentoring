@@ -1,0 +1,22 @@
+uuid: 3a57595c-fead-4307-8329-33b421d756ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sights
+id: node.sights.promote
+field_name: promote
+entity_type: node
+bundle: sights
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

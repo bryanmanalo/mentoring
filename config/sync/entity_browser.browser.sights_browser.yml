@@ -1,0 +1,47 @@
+uuid: a8fd7b96-80bb-44fe-b38e-962491b528bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sights_browser
+  module:
+    - entity_browser_entity_form
+    - views
+name: sights_browser
+label: 'Sights Browser'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: multi_step_display
+selection_display_configuration:
+  entity_type: node
+  display: label
+  display_settings: {  }
+  select_text: 'Use selected'
+  selection_hidden: false
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  fcaddc83-1c71-42de-8ce0-ef717978d4b8:
+    settings:
+      view: sights_browser
+      view_display: entity_browser_1
+      submit_text: 'Select entities'
+      auto_select: false
+    uuid: fcaddc83-1c71-42de-8ce0-ef717978d4b8
+    weight: 2
+    label: View
+    id: view
+  52f80365-4555-4de2-90b0-1824da9c37a1:
+    settings:
+      entity_type: node
+      bundle: sights
+      form_mode: default
+      submit_text: 'Save entity'
+    uuid: 52f80365-4555-4de2-90b0-1824da9c37a1
+    weight: 2
+    label: 'Add Sights'
+    id: entity_form

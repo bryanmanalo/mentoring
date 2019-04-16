@@ -1,0 +1,38 @@
+uuid: 9340bb11-b8e3-4f58-9ea7-12a67735c0f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sights.body
+    - field.field.node.sights.field_location
+    - field.field.node.sights.field_media_image
+    - field.field.node.sights.field_related_sights
+    - field.field.node.sights.field_type
+    - node.type.sights
+  module:
+    - text
+    - user
+id: node.sights.teaser
+targetEntityType: node
+bundle: sights
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_location: true
+  field_media_image: true
+  field_related_sights: true
+  field_type: true

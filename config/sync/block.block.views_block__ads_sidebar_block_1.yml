@@ -1,0 +1,33 @@
+uuid: a45c4c3a-c7cc-44cc-acf4-abfe66ea560e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.ads_sidebar
+  module:
+    - node
+    - views
+  theme:
+    - bootstrap
+id: views_block__ads_sidebar_block_1
+theme: bootstrap
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:ads_sidebar-block_1'
+settings:
+  id: 'views_block:ads_sidebar-block_1'
+  label: 'Related Ads'
+  provider: views
+  label_display: '0'
+  views_label: 'Related Ads'
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      sights: sights
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
