@@ -1,0 +1,15 @@
+diff --git a/views_bootstrap.theme.inc b/views_bootstrap.theme.inc
+index a94d60d..57903ec 100644
+--- a/views_bootstrap.theme.inc
++++ b/views_bootstrap.theme.inc
+@@ -155,9 +155,9 @@ function template_preprocess_views_bootstrap_media_object(array &$vars) {
+   $heading_field = $vars['view']->style_plugin->options['heading_field'];
+   $body_field = $vars['view']->style_plugin->options['body_field'];
+
++  $vars['classes'] = 'media-object';
+   foreach ($vars['rows'] as $id => $row) {
+     $vars['rows'][$id] = [];
+-    $vars['classes'][$id] .= ' media-object';
+     $vars['rows'][$id]['image_class'] = $image_class;
+     $vars['rows'][$id]['image'] = $vars['view']->style_plugin->getField($id, $image_field);
+     $vars['rows'][$id]['heading'] = $vars['view']->style_plugin->getField($id, $heading_field);
