@@ -32,7 +32,7 @@ widgets:
       submit_text: 'Select entities'
       auto_select: false
     uuid: fcaddc83-1c71-42de-8ce0-ef717978d4b8
-    weight: 2
+    weight: -10
     label: View
     id: view
   52f80365-4555-4de2-90b0-1824da9c37a1:
@@ -42,6 +42,6 @@ widgets:
       form_mode: default
       submit_text: 'Save entity'
     uuid: 52f80365-4555-4de2-90b0-1824da9c37a1
-    weight: 2
+    weight: -9
     label: 'Add Sights'
     id: entity_form

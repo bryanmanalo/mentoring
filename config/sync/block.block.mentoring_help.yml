@@ -1,0 +1,22 @@
+uuid: 4909ff62-0533-4439-a1df-bd4c23282514
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - mentoring
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: mentoring_help
+theme: mentoring
+region: content
+weight: -4
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

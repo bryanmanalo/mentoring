@@ -1,0 +1,22 @@
+uuid: 094d878f-de3c-4f13-92c5-37f3347ddf06
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mentoring
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: mentoring_powered
+theme: mentoring
+region: footer
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

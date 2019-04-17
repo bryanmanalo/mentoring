@@ -1,0 +1,41 @@
+uuid: fdc31d3a-fce5-4ff5-8fd8-3ea7682d7797
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.related_sights
+  module:
+    - ctools
+    - node
+    - views
+  theme:
+    - mentoring
+id: views_block__related_sights_block_1
+theme: mentoring
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:related_sights-block_1'
+settings:
+  id: 'views_block:related_sights-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      sights: sights
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  node_type:
+    id: node_type
+    bundles:
+      sights: sights
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

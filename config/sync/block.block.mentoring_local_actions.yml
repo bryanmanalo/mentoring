@@ -1,0 +1,20 @@
+uuid: 27a3e7e7-731a-4810-adf0-571916e216a8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mentoring
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: mentoring_local_actions
+theme: mentoring
+region: content
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

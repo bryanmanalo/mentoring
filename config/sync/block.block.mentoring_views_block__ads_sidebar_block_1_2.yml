@@ -1,31 +1,39 @@
-uuid: a45c4c3a-c7cc-44cc-acf4-abfe66ea560e
+uuid: 73cab6b7-de1b-4b4a-83a4-764f75e2ca81
 langcode: en
 status: true
 dependencies:
   config:
     - views.view.ads_sidebar
   module:
+    - ctools
     - node
     - views
   theme:
-    - bootstrap
-id: views_block__ads_sidebar_block_1
-theme: bootstrap
-region: sidebar_second
-weight: 0
+    - mentoring
+id: mentoring_views_block__ads_sidebar_block_1_2
+theme: mentoring
+region: sidebar_first
+weight: -7
 provider: null
 plugin: 'views_block:ads_sidebar-block_1'
 settings:
   id: 'views_block:ads_sidebar-block_1'
-  label: 'Related Ads'
+  label: ''
   provider: views
-  label_display: '0'
-  views_label: 'Related Ads'
+  label_display: visible
+  views_label: ''
   items_per_page: none
   context_mapping: {  }
 visibility:
   node_type:
     id: node_type
+    bundles:
+      sights: sights
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
     bundles:
       sights: sights
     negate: false

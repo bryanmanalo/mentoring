@@ -27,6 +27,7 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/admin_toolbar": "^1.26",
         "drupal/bootstrap": "^3.17",
+        "drupal/bootstrap_carousel_if": "^3.0",
         "drupal/chosen": "^2.7",
         "drupal/console": "^1.0.2",
         "drupal/content_browser": "^1.0@alpha",
@@ -37,9 +38,12 @@
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/media_entity_browser": "2.0-alpha1",
         "drupal/paragraphs": "^1.8",
+        "drupal/paragraphs_trimmed": "^1.0@beta",
         "drupal/pathauto": "^1.4",
         "drupal/rules": "^3.0@alpha",
         "drupal/search_api": "^1.12",
+        "drupal/smart_trim": "^1.1",
+        "drupal/views_bootstrap": "^3.0",
         "drush/drush": "^9.0.0",
         "npm-asset/chosen-js": "^1.8",
         "oomphinc/composer-installers-extender": "^1.1",
@@ -102,6 +106,11 @@
             "initial": {
                 ".editorconfig": "../.editorconfig",
                 ".gitattributes": "../.gitattributes"
+            }
+        },
+        "patches": {
+            "drupal/views_bootstrap": {
+                "Incorrect classes for media object" : "patches/views_bootstrap/fixed_notices-2940392-4_0.patch"
             }
         }
     }

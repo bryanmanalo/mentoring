@@ -1,0 +1,36 @@
+uuid: 5cb8f9e8-6f60-42e5-9f55-7f5fd6bd92b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.sights
+    - paragraphs.paragraphs_type.body_text
+    - paragraphs.paragraphs_type.carousel
+  module:
+    - entity_reference_revisions
+id: node.sights.field_content
+field_name: field_content
+entity_type: node
+bundle: sights
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      body_text: body_text
+      carousel: carousel
+    target_bundles_drag_drop:
+      body_text:
+        enabled: true
+        weight: 3
+      carousel:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

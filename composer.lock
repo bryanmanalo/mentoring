@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9356ed4a4135048d0c5e82403b49bd60",
+    "content-hash": "b95d6cc95e7203a9243568c57beda13a",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2327,6 +2327,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "3027569 - Error: Unsupported operand types during providers JSON discovery": "https://www.drupal.org/files/issues/2019-01-24/3027569-8.x-3.x-8.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2357,6 +2360,53 @@
                 "docs": "https://drupal-bootstrap.org",
                 "issues": "https://www.drupal.org/project/issues/bootstrap",
                 "irc": "irc://irc.freenode.org/drupal-bootstrap"
+            }
+        },
+        {
+            "name": "drupal/bootstrap_carousel_if",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bootstrap_carousel_if.git",
+                "reference": "8.x-3.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap_carousel_if-8.x-3.0.zip",
+                "reference": "8.x-3.0",
+                "shasum": "9aacdb7d696b8518e5c81547bb8f3d4f92d9ff39"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.0",
+                    "datestamp": "1486969986",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "2pha",
+                    "homepage": "https://www.drupal.org/user/364126"
+                }
+            ],
+            "description": "Adds formatter for displaying image fields as Bootstrap Carousel.",
+            "homepage": "https://www.drupal.org/project/bootstrap_carousel_if",
+            "support": {
+                "source": "https://git.drupalcode.org/project/bootstrap_carousel_if"
             }
         },
         {
@@ -3032,6 +3082,22 @@
                     "recurse": false,
                     "replace": false,
                     "merge-extra": false
+                },
+                "patches_applied": {
+                    "Language setWeight() null error.": "patches/core/drupal-core-language-set-weight-error.patch",
+                    "Call to a member function getThirdPartySetting() on null in ContentTranslationManager": "patches/core/drupal-core-content_translation-config-2868294-custom.patch",
+                    "Content translation link access": "patches/core/drupal-core-content_translation-content-links-access.patch",
+                    "Add prefix to CSS Optimizer": "patches/core/drupal-core-css-optimisation-add-prefix-rules-1.patch",
+                    "Add support for entity reference language": "patches/core/drupal-core-add-support-for-entity-reference-language.patch",
+                    "2918354 - Add hook_entity_translation_access()": "https://www.drupal.org/files/issues/2918354-5.patch",
+                    "2797583 - Dynamically provide action plugins for every moderation state change": "https://www.drupal.org/files/issues/2018-10-10/publish_unpublish-2797583-85.patch",
+                    "2903871 - View exported to configuration with this module spoils build": "https://www.drupal.org/files/issues/2018-10-06/2599228-74.patch",
+                    "2118743 - Twig debug output does not display all suggestions when an array of theme hooks is passed to #theme": "https://www.drupal.org/files/issues/2018-09-11/2118743-179-twig-debug-info.patch",
+                    "2663316 - Broken title in modal dialog when title is a render array": "https://www.drupal.org/files/issues/2018-07-06/2663316-52.patch",
+                    "2700667 - Notice: Undefined index: #type in drupal_process_states()": "https://www.drupal.org/files/issues/2018-03-10/2700667-29.patch",
+                    "2983958 - Users expect the \"latest translation affected revision\" not the \"latest revision\" in the views UI when moderating content": "https://www.drupal.org/files/issues/2018-09-28/2983958-24.patch",
+                    "3016038 - Unrecognised entity operation passed to Menu Link Content throws exceptions": "https://www.drupal.org/files/issues/2019-03-03/3016038-menu-link-operation-8.patch",
+                    "2877994 - Entity Links fields does not have translation support": "https://www.drupal.org/files/issues/2019-01-05/2877994-88.patch"
                 }
             },
             "autoload": {
@@ -3757,6 +3823,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Add buttons (Add or Remove) to translated content paragraphs": "patches/paragraphs/paragraphs-show-buttons-on-translated-content-paragraphs.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3792,6 +3861,62 @@
             }
         },
         {
+            "name": "drupal/paragraphs_trimmed",
+            "version": "1.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/paragraphs_trimmed.git",
+                "reference": "8.x-1.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/paragraphs_trimmed-8.x-1.0-beta2.zip",
+                "reference": "8.x-1.0-beta2",
+                "shasum": "6616413766b723d617debf314e8b33c34f9777e1"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/paragraphs": "*"
+            },
+            "require-dev": {
+                "drupal/paragraphs": "*",
+                "drupal/smart_trim": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1551485288",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "drclaw",
+                    "homepage": "https://www.drupal.org/user/823702"
+                }
+            ],
+            "description": "Trim rendered paragraphs output similar to how you might do on a long text field",
+            "homepage": "https://www.drupal.org/project/paragraphs_trimmed",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/paragraphs_trimmed",
+                "issues": "https://www.drupal.org/project/issues/paragraphs_trimmed"
+            }
+        },
+        {
             "name": "drupal/pathauto",
             "version": "1.4.0",
             "source": {
@@ -3822,6 +3947,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "3047196 - Injection on PathautoGenerator (3031650) causes \"too few arguments\" in at least one case": "https://www.drupal.org/files/issues/2019-04-12/pathauto-optional_alias_type_manager-3047196-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3985,6 +4113,75 @@
             }
         },
         {
+            "name": "drupal/smart_trim",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/smart_trim.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/smart_trim-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "5f1c0f15914208e0ad2ec5cce1d6419040596fc0"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1516301286",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Casias (markie)",
+                    "homepage": "https://www.drupal.org/u/markie",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "chrisjlee",
+                    "homepage": "https://www.drupal.org/user/760600"
+                },
+                {
+                    "name": "drywall",
+                    "homepage": "https://www.drupal.org/user/192591"
+                },
+                {
+                    "name": "jsenich",
+                    "homepage": "https://www.drupal.org/user/58871"
+                },
+                {
+                    "name": "markie",
+                    "homepage": "https://www.drupal.org/user/206687"
+                },
+                {
+                    "name": "newsignature",
+                    "homepage": "https://www.drupal.org/user/765518"
+                }
+            ],
+            "description": "Provides a more robust alternative to 'summary or trimmed' textfield format.",
+            "homepage": "https://drupal.org/project/smart_trim",
+            "support": {
+                "source": "https://cgit.drupalcode.org/smart_trim",
+                "issues": "https://drupal.org/project/issues/smart_trim"
+            }
+        },
+        {
             "name": "drupal/token",
             "version": "1.5.0",
             "source": {
@@ -4013,6 +4210,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Respect current language for URL tokens": "patches/token/respect-current-language-for-url-tokens-elements.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4100,6 +4300,71 @@
             "homepage": "https://www.drupal.org/project/typed_data",
             "support": {
                 "source": "https://git.drupalcode.org/project/typed_data"
+            }
+        },
+        {
+            "name": "drupal/views_bootstrap",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/views_bootstrap.git",
+                "reference": "8.x-3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_bootstrap-8.x-3.1.zip",
+                "reference": "8.x-3.1",
+                "shasum": "7fd556457f028fa736d1422a9b5a763566fd7d2e"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.1",
+                    "datestamp": "1537360681",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "patches_applied": {
+                    "Incorrect classes for media object": "patches/views_bootstrap/fixed_notices-2940392-4_0.patch"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "aburrows",
+                    "homepage": "https://www.drupal.org/user/577844"
+                },
+                {
+                    "name": "ericpugh",
+                    "homepage": "https://www.drupal.org/user/130084"
+                },
+                {
+                    "name": "ikeigenwijs",
+                    "homepage": "https://www.drupal.org/user/583238"
+                },
+                {
+                    "name": "mrded",
+                    "homepage": "https://www.drupal.org/user/556088"
+                }
+            ],
+            "description": "Integrate the Bootstrap framework with Views.",
+            "homepage": "https://www.drupal.org/project/views_bootstrap",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/views_bootstrap"
             }
         },
         {
@@ -9900,6 +10165,7 @@
     "stability-flags": {
         "drupal/content_browser": 15,
         "drupal/inline_entity_form": 5,
+        "drupal/paragraphs_trimmed": 10,
         "drupal/rules": 15
     },
     "prefer-stable": true,

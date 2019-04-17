@@ -1,0 +1,14 @@
+uuid: 8f66b6c2-83cc-44d1-a8c8-713770ac253b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content_pattern
+label: 'Content Pattern'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

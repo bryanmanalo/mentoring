@@ -1,0 +1,29 @@
+uuid: 68f37db4-8a64-49c7-be05-73481a7ae40c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search_sights
+  module:
+    - system
+    - views
+  theme:
+    - mentoring
+id: exposedformsearch_sightspage_1
+theme: mentoring
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:search_sights-page_1'
+settings:
+  id: 'views_exposed_filter_block:search_sights-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /search-sights
+    negate: false
+    context_mapping: {  }
